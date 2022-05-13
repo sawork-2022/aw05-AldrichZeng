@@ -9,3 +9,4 @@
 3. 请注意使用断路器等机制；
 4. 有兴趣的同学可自学一些reactjs或vuejs等为microPoS开发一个前端。
 
+实验过程：https://furry-oviraptor-88a.notion.site/5-93b2d8fb3f1144e9b6efe43ab4a74be8
