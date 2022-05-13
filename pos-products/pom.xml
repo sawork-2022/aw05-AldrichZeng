@@ -48,18 +48,31 @@
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.micropos</groupId>
+            <artifactId>pos-api</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.openapitools</groupId>-->
+<!--                <artifactId>openapi-generator-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <modelNameSuffix>Dto</modelNameSuffix>-->
+<!--                    <apiPackage>com.micropos.products.api</apiPackage>-->
+<!--                    <modelPackage>com.micropos.products.dto</modelPackage>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
-                <groupId>org.openapitools</groupId>
-                <artifactId>openapi-generator-maven-plugin</artifactId>
-                <configuration>
-                    <modelNameSuffix>Dto</modelNameSuffix>
-                    <apiPackage>com.micropos.products.api</apiPackage>
-                    <modelPackage>com.micropos.products.dto</modelPackage>
-                </configuration>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

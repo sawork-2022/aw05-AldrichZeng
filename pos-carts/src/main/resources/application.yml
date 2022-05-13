@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: pos-carts
+  session:
+    store-type: jdbc
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+logging:
+  level:
+    root: debug
+server:
+  port: 8082
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl: # is a client
+      defaultZone: http://localhost:8761/eureka/
+#    instance:
+#      instance-id: ${spring.application.name}:${server.port}
